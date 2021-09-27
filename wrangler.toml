@@ -6,4 +6,6 @@ route = "${DOMAIN}/*"
 zone_id = "${CLOUDFLARE_ZONE_ID}"
 webpack_config = "webpack.config.js"
 
-vars = { TARGET_BASE_URL = "${TARGET_BASE_URL}" }
+[vars]
+TARGET_BASE_URL = "${TARGET_BASE_URL}"
+TARGET_FULL_URL = "${TARGET_FULL_URL}"
