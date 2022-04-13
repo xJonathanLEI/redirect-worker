@@ -1,6 +1,6 @@
-# Cloudflare Worker for 301 Redirects
+# Cloudflare Worker for Redirects
 
-A simple Cloudflare Worker for redirecting requests with 301 responses.
+A simple Cloudflare Worker for redirecting requests.
 
 ## License
 

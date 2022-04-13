@@ -10,7 +10,7 @@ export async function handleRequest(request: Request): Promise<Response> {
     });
   } else if (TARGET_BASE_URL) {
     return new Response(null, {
-      status: 301,
+      status: RESPONSE_CODE ? parseInt(RESPONSE_CODE) : 301,
       headers: {
         Location:
           (TARGET_BASE_URL.endsWith("/")

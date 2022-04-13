@@ -9,3 +9,4 @@ webpack_config = "webpack.config.js"
 [vars]
 TARGET_BASE_URL = "${TARGET_BASE_URL}"
 TARGET_FULL_URL = "${TARGET_FULL_URL}"
+RESPONSE_CODE = "${RESPONSE_CODE}"
