@@ -1,10 +1,15 @@
-name = "${CLOUDFLARE_WORKER_NAME}"
-type = "webpack"
+name = "redirect"
+main = "build/worker/shim.mjs"
+compatibility_date = "2023-01-31"
 account_id = "${CLOUDFLARE_ACCOUNT_ID}"
-workers_dev = true
-route = "${DOMAIN}/*"
-zone_id = "${CLOUDFLARE_ZONE_ID}"
-webpack_config = "webpack.config.js"
+workers_dev = false
+
+routes = [
+  "${ROUTE}"
+]
+
+[build]
+command = "cargo install -q worker-build && worker-build --release"
 
 [vars]
 TARGET_BASE_URL = "${TARGET_BASE_URL}"
